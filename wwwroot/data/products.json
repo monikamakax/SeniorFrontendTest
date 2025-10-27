@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Spark Soda",
+        "price": 19.90,
+        "flavour": "Lime"
+    },
+    {
+        "id": 2,
+        "name": "Spark Soda",
+        "price": 19.90,
+        "flavour": "Raspberry"
+    },
+    {
+        "id": 3,
+        "name": "Spark Soda",
+        "price": 19.90,
+        "flavour": "Peach"
+    },
+    {
+        "id": 4,
+        "name": "Cold Brew",
+        "price": 29.00,
+        "flavour": "Original"
+    },
+    {
+        "id": 5,
+        "name": "Cold Brew",
+        "price": 29.00,
+        "flavour": "Vanilla"
+    },
+    {
+        "id": 6,
+        "name": "Protein Bar",
+        "price": 24.50,
+        "flavour": "Chocolate"
+    },
+    {
+        "id": 7,
+        "name": "Protein Bar",
+        "price": 24.50,
+        "flavour": "Peanut"
+    },
+    {
+        "id": 8,
+        "name": "Iced Tea",
+        "price": 17.00,
+        "flavour": "Lemon"
+    },
+    {
+        "id": 9,
+        "name": "Iced Tea",
+        "price": 17.00,
+        "flavour": "Peach"
+    },
+    {
+        "id": 10,
+        "name": "Energy Shot",
+        "price": 15.00,
+        "flavour": "Berry"
+    }
+]
