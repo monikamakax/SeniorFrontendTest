@@ -1,0 +1,22 @@
+{
+  "name": "Razor + Webpack",
+  "features": {
+    "ghcr.io/devcontainers/features/dotnet:2": { "version": "8.0" },
+    "ghcr.io/devcontainers/features/node:1": { "version": "20" }
+  },
+  "postCreateCommand": "dotnet restore && npm ci || npm install && npm run build",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-dotnettools.csdevkit",
+        "ms-dotnettools.vscode-dotnet-runtime",
+        "ms-vscode.vscode-typescript-next"
+      ]
+    }
+  },
+  "forwardPorts": [5000, 5001],
+  "portsAttributes": {
+    "5001": { "label": "ASP.NET (HTTPS)", "onAutoForward": "openBrowser" },
+    "5000": { "label": "ASP.NET (HTTP)", "onAutoForward": "ignore" }
+  }
+}
