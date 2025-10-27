@@ -3,15 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production",
-    "watch": "webpack --mode development --watch"
+    "dev": "concurrently \"npm:watch\" \"dotnet watch --non-interactive\"",
+    "watch": "webpack --mode development --watch",
+    "build": "webpack --mode production"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "concurrently": "^9.2.1",
     "css-loader": "^7.1.2",
     "less": "^4.4.2",
     "less-loader": "^12.3.0",
