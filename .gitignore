@@ -1,0 +1,26 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.userprefs
+*.csproj.user
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+
+# Node
+node_modules/
+npm-cache/
+.yarn/
+.pnp.*
+
+# Build artifacts
+wwwroot/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/

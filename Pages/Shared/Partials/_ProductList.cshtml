@@ -1,0 +1,15 @@
+@using CodeTest.Models
+@model IEnumerable<Product>
+
+<div class="product-list-wrapper">
+    <h2>Product List</h2>
+    <ul class="product-list">
+        @foreach (Product product in Model)
+        {
+            <li class="product-item">
+                <h3>@product.Name (@product.Flavour)</h3>
+                <p>Price: @product.Price.ToString("C")</p>
+            </li>
+        }
+    </ul>
+</div>
