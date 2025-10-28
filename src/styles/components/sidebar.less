@@ -1,0 +1,31 @@
+@sidebar-animation-duration: 200ms;
+@sidebar-animation-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 400px;
+  max-width: 90vw;
+  height: 100vh;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.3) 0px 12px 48px 0px;
+  transform: translateX(100%);
+  visibility: hidden;
+  transition: transform @sidebar-animation-duration @sidebar-animation-ease,
+    visibility 0s linear @sidebar-animation-duration;
+  .icon.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  &.open {
+    transform: translateX(0);
+    visibility: visible;
+    pointer-events: auto;
+    transition: transform @sidebar-animation-duration @sidebar-animation-ease,
+      visibility 0s;
+  }
+}

@@ -5,8 +5,16 @@
             <i class="icon cart"></i>
         </div>
         <div class="header-menu">
-            <i class="icon menu"></i>
-            <nav class="header-nav"></nav>
+            <button data-event="toggle-element" data-toggle-target="menu" class="icon menu"></button>
+            <nav class="header-nav sidebar" data-container="menu">
+                <button data-event="toggle-element" data-toggle-target="menu" class="icon close"></button>
+                <ul class="header-nav-list">
+                    <li class="header-nav-item">Beverages</li>
+                    <li class="header-nav-item">Snacks</li>
+                    <li class="header-nav-item">About us</li>
+                    <li class="header-nav-item">Contact</li>
+                </ul>
+            </nav>
         </div>
     </div>
 </header>
