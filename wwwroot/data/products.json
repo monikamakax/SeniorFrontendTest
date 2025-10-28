@@ -1,72 +1,82 @@
 [
-    {
-        "id": 1,
-        "name": "Spark Soda",
-        "price": 19.90,
-        "flavour": "Lime",
-        "type": "Beverage"
-    },
-    {
-        "id": 2,
-        "name": "Spark Soda",
-        "price": 19.90,
-        "flavour": "Lime",
-        "type": "Beverage"
-    },
-    {
-        "id": 3,
-        "name": "Spark Soda",
-        "price": 19.90,
-        "flavour": "Peach",
-        "type": "Beverage"
-    },
-    {
-        "id": 4,
-        "name": "Cold Brew",
-        "price": 29.00,
-        "flavour": "Original",
-        "type": "Beverage"
-    },
-    {
-        "id": 5,
-        "name": "Cold Brew",
-        "price": 29.00,
-        "flavour": "Vanilla",
-        "type": "Beverage"
-    },
-    {
-        "id": 6,
-        "name": "Protein Bar",
-        "price": 24.50,
-        "flavour": "Chocolate",
-        "type": "Snack"
-    },
-    {
-        "id": 7,
-        "name": "Protein Bar",
-        "price": 24.50,
-        "flavour": "Peanut",
-        "type": "Snack"
-    },
-    {
-        "id": 8,
-        "name": "Iced Tea",
-        "price": 17.00,
-        "flavour": "Lemon",
-        "type": "Beverage"
-    },
-    {
-        "id": 9,
-        "name": "Iced Tea",
-        "price": 17.00,
-        "flavour": "Peach",
-        "type": "Beverage"
-    },
-    {
-        "id": 10,
-        "name": "Energy Shot",
-        "price": 15.00,
-        "flavour": "Berry",
-        "type": "Beverage"
-    }
+  {
+    "id": 1,
+    "name": "Spark Soda",
+    "price": 19.9,
+    "flavour": "Cola",
+    "type": "Beverage",
+    "image": "/images/spark_soda_cola.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Spark Soda",
+    "price": 19.9,
+    "flavour": "Lime",
+    "type": "Beverage",
+    "image": "/images/spark_soda_lime.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Spark Soda",
+    "price": 19.9,
+    "flavour": "Peach",
+    "type": "Beverage",
+    "image": "/images/spark_soda_cola.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "Cold Brew",
+    "price": 29.0,
+    "flavour": "Coffee",
+    "type": "Beverage",
+    "image": "/images/cold_brew_coffee.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "Cold Brew",
+    "price": 29.0,
+    "flavour": "Vanilla",
+    "type": "Beverage",
+    "image": "/images/cold_brew_vanilla.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Protein Bar",
+    "price": 24.5,
+    "flavour": "Vanilla",
+    "type": "Snack",
+    "image": "/images/protein_bar_vanilla.jpeg"
+  },
+  {
+    "id": 7,
+    "name": "Protein Bar",
+    "price": 24.5,
+    "flavour": "Cola",
+    "type": "Snack",
+    "image": "/images/protein_bar_cola.jpeg"
+  },
+  {
+    "id": 8,
+    "name": "Iced Tea",
+    "price": 17.0,
+    "flavour": "Lime",
+    "type": "Beverage",
+    "image": "/images/iced_tea_lime.jpeg"
+  },
+  {
+    "id": 9,
+    "name": "Iced Tea",
+    "price": 17.0,
+    "flavour": "Peach",
+    "type": "Beverage",
+    "image": "/images/iced_tea_lime.jpeg"
+  },
+  {
+    "id": 10,
+    "name": "Energy Shot",
+    "price": 15.0,
+    "flavour": "Peach",
+    "type": "Beverage",
+    "image": "/images/energy_shot_peach.jpeg"
+  }
 ]

@@ -7,5 +7,6 @@ namespace CodeTest.Models
         public decimal Price { get; set; }
         public string? Flavour { get; set; }
         public string? Type { get; set; }
+        public string? Image { get; set; }
     }
 }
