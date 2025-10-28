@@ -1,11 +1,13 @@
 using System.Text.Json;
 using CodeTest.Models;
+using System.Reflection;
 
 namespace CodeTest.Services
 {
     public interface IProductService
     {
         Task<List<Product>> GetAllAsync();
+        Task<List<Product>> GetFilteredAsync(Dictionary<string, string> filters);
     }
 
     public class ProductService : IProductService
@@ -29,5 +31,17 @@ namespace CodeTest.Services
         }
 
         public Task<List<Product>> GetAllAsync() => _cache.Value;
+
+        public async Task<List<Product>> GetFilteredAsync(Dictionary<string, string> filters)
+        {
+            var allProducts = await GetAllAsync();
+
+            if (filters == null || !filters.Any())
+                return allProducts;
+            var filteredProducts = allProducts;
+            // Todo: Implement filtering logic based on the filters dictionary
+
+            return filteredProducts;
+        }
     }
 }
