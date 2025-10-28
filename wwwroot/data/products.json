@@ -3,60 +3,70 @@
         "id": 1,
         "name": "Spark Soda",
         "price": 19.90,
-        "flavour": "Lime"
+        "flavour": "Lime",
+        "type": "Beverage"
     },
     {
         "id": 2,
         "name": "Spark Soda",
         "price": 19.90,
-        "flavour": "Raspberry"
+        "flavour": "Lime",
+        "type": "Beverage"
     },
     {
         "id": 3,
         "name": "Spark Soda",
         "price": 19.90,
-        "flavour": "Peach"
+        "flavour": "Peach",
+        "type": "Beverage"
     },
     {
         "id": 4,
         "name": "Cold Brew",
         "price": 29.00,
-        "flavour": "Original"
+        "flavour": "Original",
+        "type": "Beverage"
     },
     {
         "id": 5,
         "name": "Cold Brew",
         "price": 29.00,
-        "flavour": "Vanilla"
+        "flavour": "Vanilla",
+        "type": "Beverage"
     },
     {
         "id": 6,
         "name": "Protein Bar",
         "price": 24.50,
-        "flavour": "Chocolate"
+        "flavour": "Chocolate",
+        "type": "Snack"
     },
     {
         "id": 7,
         "name": "Protein Bar",
         "price": 24.50,
-        "flavour": "Peanut"
+        "flavour": "Peanut",
+        "type": "Snack"
     },
     {
         "id": 8,
         "name": "Iced Tea",
         "price": 17.00,
-        "flavour": "Lemon"
+        "flavour": "Lemon",
+        "type": "Beverage"
     },
     {
         "id": 9,
         "name": "Iced Tea",
         "price": 17.00,
-        "flavour": "Peach"
+        "flavour": "Peach",
+        "type": "Beverage"
     },
     {
         "id": 10,
         "name": "Energy Shot",
         "price": 15.00,
-        "flavour": "Berry"
+        "flavour": "Berry",
+        "type": "Beverage"
     }
 ]

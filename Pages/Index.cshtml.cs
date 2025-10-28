@@ -19,6 +19,6 @@ public class IndexModel : PageModel
     {
         // get all products from the product service
         Products = _productService.GetAllAsync().Result.ToList();
-
     }
+
 }
