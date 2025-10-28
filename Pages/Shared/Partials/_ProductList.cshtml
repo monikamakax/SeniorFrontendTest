@@ -2,14 +2,22 @@
 @model IEnumerable<Product>
 
 <div class="product-list-wrapper">
-    <h2>Product List</h2>
     <ul class="product-list">
         @foreach (Product product in Model)
         {
-            <li class="product-item">
-                <h3>@product.Name (@product.Flavour)</h3>
-                <img src="@product.Image" alt="@product.Name" class="product-image" />
-                <p>Price: @product.Price.ToString("C")</p>
+            <li class="product-card">
+                <div class="product-image-wrapper">
+                    <img src="@product.Image" alt="@product.Name - @product.Flavour" class="product-image" />
+                    <span class="product-type-badge">@product.Type</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">@product.Name</h3>
+                    <p class="product-flavour">@product.Flavour</p>
+                    <div class="product-footer">
+                        <span class="product-price">$@product.Price.ToString("F2")</span>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
             </li>
         }
     </ul>

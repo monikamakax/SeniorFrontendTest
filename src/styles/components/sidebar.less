@@ -15,12 +15,13 @@
   visibility: hidden;
   transition: transform @sidebar-animation-duration @sidebar-animation-ease,
     visibility 0s linear @sidebar-animation-duration;
+  z-index: 1;
+
   .icon.close {
     position: absolute;
     top: 20px;
     right: 20px;
   }
-
   &.open {
     transform: translateX(0);
     visibility: visible;
