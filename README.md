@@ -43,12 +43,16 @@ Without debugging:
 With debugging:
 1. Click Run and debug
 <img width="412" height="416" alt="image" src="https://github.com/user-attachments/assets/25c1694a-07d1-406d-8dad-cf35e2744241" />
+
 2. Select debugger, choose C#
 <img width="788" height="261" alt="image" src="https://github.com/user-attachments/assets/1e5ac311-3517-44d1-a63e-6824a0a1c155" />
+
 3. Select startup project and CodeTest
 <img width="769" height="204" alt="image" src="https://github.com/user-attachments/assets/ec0d4e15-6f0b-438d-a3d1-383db69e5d28" />
+
 4. Start debugging (F5)
 <img width="375" height="119" alt="image" src="https://github.com/user-attachments/assets/bcda86c5-7109-420d-a5b5-bd2b469ff494" />
+
 5. Now the project should be running on http://localhost:5001
 
 
