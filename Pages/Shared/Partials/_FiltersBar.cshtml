@@ -1,0 +1,21 @@
+@using CodeTest.Models
+@model Dictionary<string, List<string?>>
+
+
+<div>
+    @foreach(var kvp in Model)
+    {
+        <div class="filter-item">
+            <label>@kvp.Key</label>
+            <select class="form-select" key="@kvp.Key">
+                @foreach(var val in kvp.Value){
+                    if(!string.IsNullOrEmpty(val)) 
+                    {
+                        <option value="@val">@val</option>
+                    }
+                }
+            </select>
+        </div>
+    }
+    <button data-event="filter-products">Filter</button>
+</div>

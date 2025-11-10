@@ -1,6 +1,5 @@
 using System.Text.Json;
 using CodeTest.Models;
-using System.Reflection;
 
 namespace CodeTest.Services
 {
@@ -38,8 +37,26 @@ namespace CodeTest.Services
 
             if (filters == null || !filters.Any())
                 return allProducts;
-            var filteredProducts = allProducts;
-            // Todo: Implement filtering logic based on the filters dictionary
+
+            var props = typeof(Product).GetProperties()
+                    .ToDictionary(p => p.Name, p => p, StringComparer.OrdinalIgnoreCase);
+            var filteredProducts = allProducts.Where(product =>
+            {
+                foreach (var kvp in filters)
+                {
+                    if (string.IsNullOrWhiteSpace(kvp.Value))
+                        continue;
+
+                    if (!props.TryGetValue(kvp.Key, out var prop))
+                        return false;
+
+                    var val = prop.GetValue(product)?.ToString() ?? "";
+
+                    if (!val.Contains(kvp.Value, StringComparison.OrdinalIgnoreCase))
+                        return false;
+                }
+                return true;
+            }).ToList();
 
             return filteredProducts;
         }
